@@ -1,0 +1,103 @@
+/* styles/Sidebar.module.css */
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background: var(--bg2);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  position: fixed;
+  left: 0; top: 0; bottom: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px 28px;
+}
+
+.logoIcon {
+  width: 32px;
+  height: 32px;
+  background: var(--accent);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  line-height: 32px;
+  text-align: center;
+}
+
+.logoText {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.15s;
+}
+
+.navItem:hover { background: var(--bg3); color: var(--text); }
+.navItem.active { background: var(--accent-light); color: var(--accent); }
+
+.navIcon { font-size: 16px; width: 20px; text-align: center; }
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 10px 0;
+  border-top: 1px solid var(--border);
+}
+
+.user { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; }
+
+.avatar {
+  width: 32px; height: 32px; min-width: 32px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 13px; color: white;
+}
+
+.userInfo { display: flex; flex-direction: column; min-width: 0; }
+
+.username {
+  font-size: 13px; font-weight: 600;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  color: var(--text);
+}
+
+.email {
+  font-size: 11px; color: var(--muted);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+.logout {
+  background: none; color: var(--muted); font-size: 16px;
+  padding: 6px; border-radius: 8px; transition: all 0.15s;
+  border: none; cursor: pointer;
+}
+.logout:hover { background: rgba(192,57,43,0.08); color: var(--red); }

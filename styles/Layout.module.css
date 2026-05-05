@@ -1,0 +1,12 @@
+/* styles/Layout.module.css */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main {
+  margin-left: 240px;
+  flex: 1;
+  padding: 36px 40px;
+  max-width: 1100px;
+}
