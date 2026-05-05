@@ -46,7 +46,7 @@ INSERT INTO categories (name) VALUES
     ('Shopping'),
     ('Education'),
     ('Other');
-
+-- seed users:
 -- passwords are just Password_123! hashed with bycrypt
 
 INSERT INTO users (username, email, password_hash) VALUES
