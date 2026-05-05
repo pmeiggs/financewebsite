@@ -1,8 +1,8 @@
 -- sql code
 
 
-CREATE DATABASE IF NOT EXISTS finance_tracker;
-USE finance_tracker;
+CREATE DATABASE IF NOT EXISTS financewebsite;
+USE financewebsite;
 
 
 CREATE TABLE IF NOT EXISTS users (
@@ -47,11 +47,12 @@ INSERT INTO categories (name) VALUES
     ('Education'),
     ('Other');
 
+-- passwords are just Password_123! hashed with bycrypt
 
 INSERT INTO users (username, email, password_hash) VALUES
-    ('user1',  'user1@example.com',  '$2b$10$examplehash1'),
-    ('user2',    'user2@example.com',    '$2b$10$examplehash2'),
-    ('user3',  'user3@example.com',  '$2b$10$examplehash3');
+    ('user1',  'user1@example.com',  '$2a$12$HihQw59rvNsFOSqAcYJJC.3Q6slBI6Uy.pD53c5Hes5Cr7XOMiuvy'),
+    ('user2',    'user2@example.com',    '$2a$12$HihQw59rvNsFOSqAcYJJC.3Q6slBI6Uy.pD53c5Hes5Cr7XOMiuvy'),
+    ('user3',  'user3@example.com',  '$2a$12$HihQw59rvNsFOSqAcYJJC.3Q6slBI6Uy.pD53c5Hes5Cr7XOMiuvy');
 
 
 INSERT INTO transactions (user_id, amount, type, category_id, description, date) VALUES
