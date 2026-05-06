@@ -8,16 +8,16 @@ you can generate a JWT key running: node -e "console.log(require('crypto').rando
 as your key, you can run this inside a console or the vscode terminal after pnpm install has been run
 
 instructions:
-
-1. create a connection to MySQL and run database/schema.sql
+1. run MySQL on XAMPP
+2. create a connection to MySQL and run database/schema.sql
 after this test users will be created but you can go ahead and register yourself after follwing the instructions
 to the end
-2. create a new terminal
-3. cd into the right folder (the one that has package.json)
-4. pnpm install
-5. pnpm dev (for dev mode)
-6. Open http://localhost:3000 in your browser, if port 3000 is already in use check nextjs output in terminal for port
-7. Use logins already made or create a new account — credentials in database/schema.sql
+3. create a new terminal
+4. cd into the right folder (the one that has package.json)
+5. pnpm install
+6. pnpm dev (for dev mode)
+7. Open http://localhost:3000 in your browser, if port 3000 is already in use check nextjs output in terminal for port
+8. Use logins already made or create a new account — credentials in database/schema.sql
 
 if you close terminal where you ran pnpm dev youll have to follow steps 2-5 again then refresh browser or go into the
 port nextjs output tells you in the terminal
